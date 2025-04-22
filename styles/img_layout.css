@@ -2,7 +2,6 @@
    General Styling
 ================================== */
 
-/* Center text for headers */
 
 .all_images_containter {
     display: none;
@@ -13,7 +12,6 @@
    Image Section and Flexbox Layout
 ================================== */
 
-/* Styling for image container */
 .image_container {
     display: flex;
     justify-content: center;
@@ -22,7 +20,6 @@
     max-width: 100%;
 }
 
-/* Columns within the image container */
 .image_container section {
     flex: 1;
     display: flex;
@@ -35,33 +32,26 @@
    Image and Hover Effect Styling
 ================================== */
 
-/* Styling for image_with_info div */
 .image_with_info {
     position: relative;
     width: 100%;
     margin-bottom: var(--gap_between_images);
     overflow: hidden;
-    /* Ensure the image doesn't overflow the container */
     transition: all 0.3s ease-in-out;
     border-radius: var(--rouned_corners);
-    /* Smooth transition for all changes */
     display: flex;
     justify-content: center;
 }
 
-/* Ensures the image stretches to fit the container */
 .image_with_info img {
     width: 100%;
-    /* Ensure the image covers the entire container */
     object-fit: cover;
-    /* This ensures the image fills the container while maintaining its aspect ratio */
     display: block;
 }
 
 /* ================================
    Text Overlay Styling
 ================================== */
-/* Styling for the text container inside image_with_info */
 .image_with_info {
     position: relative;
     overflow: hidden;
@@ -69,14 +59,12 @@
     width: 100%;
 }
 
-/* Ensuring the image fills its container */
 .image_with_info img {
     width: 100%;
     height: auto;
     transition: width var(--imgs_hover_state) ease-in-out;
 }
 
-/* Text overlay */
 .image_text {
     position: absolute;
     top: 0;
@@ -94,12 +82,11 @@
     align-items: center;
 }
 
-/* Expand the image as well */
+
 .image_with_info:hover img {
     width: 110%;
 }
 
-/* Show text on hover */
 .image_with_info:hover .image_text {
     opacity: 1;
 }
@@ -110,18 +97,16 @@
    Responsive Design
 ================================== */
 
-/* Ensure up to 3 columns are shown on large screens */
 @media (max-width: 1200px) {
     .image_container {
         justify-content: center;
-        /* Keeps the columns centered */
     }
 }
 
-/* Center columns on medium screens */
+
 @media (max-width: 900px) {
     .image_container {
         justify-content: center;
-        /* Centers remaining columns */
+
     }
 }
