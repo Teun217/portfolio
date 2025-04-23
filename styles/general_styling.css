@@ -3,9 +3,9 @@
 ================================== */
 
 :root {
-    --gap_between_images: 0.6em;
+    --gap_between_images: 1.1em;
     --space_on_sides: 15%;
-    --rouned_corners: 0.25em;
+    --rouned_corners: 0.5em;
     --imgs_hover_state: 0.5s;
 }
 
@@ -62,7 +62,7 @@ p {
 ================================== */
 
 body {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 h1 {

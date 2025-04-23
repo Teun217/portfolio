@@ -41,6 +41,7 @@
     border-radius: var(--rouned_corners);
     display: flex;
     justify-content: center;
+    filter: drop-shadow(0 0 0.4em rgb(170, 170, 170));
 }
 
 .image_with_info img {
